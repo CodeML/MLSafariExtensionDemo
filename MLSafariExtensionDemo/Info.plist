@@ -21,5 +21,15 @@
 			</array>
 		</dict>
 	</dict>
+	<key>Permissions</key>
+	<dict>
+		<key>WebExtension</key>
+		<dict>
+			<key>Content Scripts</key>
+			<array>
+				<string>all_frames</string>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>

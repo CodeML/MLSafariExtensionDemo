@@ -1,0 +1,36 @@
+/* 侧边按钮容器 */
+.side-button-container {
+  all: initial; /* 重置默认样式 */
+}
+
+/* 胶囊按钮基础样式 */
+#capsule-button {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 58px; /* 初始宽度 */
+  background: #EBEFF6;
+  border-radius: 0 20px 20px 0; /* 右侧圆角 */
+  border: none;
+  cursor: pointer;
+  overflow: hidden; /* 隐藏超出部分 */
+  transition: width 0.3s ease;
+  z-index: 999999;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* 按钮展开状态 */
+#capsule-button.expanded {
+  width: 80px;
+}
+
+/* 按钮内图片 */
+#capsule-button img {
+  position: absolute;
+  width: 39.6px;
+  height: 25px;
+  right: 8.4px;
+  top: 8px;
+}
